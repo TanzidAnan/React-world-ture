@@ -14,7 +14,7 @@ const Contries = () => {
         <div>
             <h3>All Countries: <span className='countryall'>{countries.length}</span> </h3>
             {
-                countries.map(country =><Country country={country}></Country>)
+                countries.map(country => <Country country={country} key={country.area}></Country>)
             }
         </div>
     );

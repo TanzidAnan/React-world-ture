@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-    <Contries></Contries>
+     <Contries></Contries>
       <h1>Vite + React</h1>
     </>
   )

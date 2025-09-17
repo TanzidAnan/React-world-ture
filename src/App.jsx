@@ -6,8 +6,9 @@ function App() {
 
   return (
     <>
+    <h1>React Would ture</h1>
      <Contries></Contries>
-      <h1>Vite + React</h1>
+      
     </>
   )
 }

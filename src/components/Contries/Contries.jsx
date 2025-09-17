@@ -11,11 +11,13 @@ const Contries = () => {
     }, [])
 
     return (
-        <div>
+        <div className='countryAll'>
             <h3>All Countries: <span className='countryall'>{countries.length}</span> </h3>
-            {
-                countries.map(country => <Country country={country} key={country.area}></Country>)
-            }
+            <div className='country-container'>
+                {
+                    countries.map(country => <Country country={country} key={country.area}></Country>)
+                }
+            </div>
         </div>
     );
 };

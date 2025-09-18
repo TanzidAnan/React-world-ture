@@ -3,6 +3,7 @@
     grid-template-columns: repeat(3,1fr);
     gap: 15px;
 }
+
 .countryAll{
     width: 1280px;
     margin: 0 auto;

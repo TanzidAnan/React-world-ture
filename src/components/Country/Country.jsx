@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Country.css'
 
-const Country = ({country,handleVisitedCountry}) => {
+const Country = ({country,handleVisitedCountry,handleVisitedFlage}) => {
     console.log(country)
 
     const {name,flags,population,area} =country;
@@ -9,9 +9,6 @@ const Country = ({country,handleVisitedCountry}) => {
 
     const handleVisited =() =>{
         setVisited(!visited)
-    }
-    const passWithParms =() =>{
-        handleVisitedCountry(country)
     }
 
     return (
@@ -21,6 +18,7 @@ const Country = ({country,handleVisitedCountry}) => {
             <h5>area: {area}</h5>
             <p>population: {population}</p>
             <button onClick={()=>handleVisitedCountry(country)}>Mark Visited</button>
+            <button onClick={()=>handleVisitedFlage(country.flags.png)}>Add Flag</button>
             <button onClick={handleVisited}>{visited? 'Visited':'Going'}</button>
             {visited ?'I have visited this country':'I want to visited'}
         </div>
